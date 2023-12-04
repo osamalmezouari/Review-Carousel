@@ -1,0 +1,109 @@
+/** @format */
+
+@use "./sass/rules";
+@use "./sass/var";
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: hsl(210, 36%, 96%);
+	margin: 0px;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.parent {
+	width: max-content;
+	> :nth-child(1) {
+		width: max-content;
+		margin: auto;
+		font : {
+			size: 30px;
+			family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+		color: var.$blackBlue;
+		&::after {
+			content: "";
+			display: block;
+			height: 5px;
+			width: 20%;
+			background-color: var.$whiteBlue;
+			margin: auto;
+		}
+	}
+}
+.reviewcard {
+	background-color: white;
+	box-shadow: 0px 0px 20px 1px hsla(205, 100%, 94%, 0.068);
+	border: 0px solid;
+	border-radius: 10px;
+	height: max-content;
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+	> :nth-child(1) {
+		background-image: url(https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+		background-size: cover;
+		background-position: center;
+		height: 120px;
+		width: 120px;
+		border-radius: 50%;
+		margin: auto;
+		box-shadow: 2px -2px 0px 2px var.$whiteBlue;
+		> i {
+			display: block;
+			background-color: var.$whiteBlue;
+			text-align: start;
+			color: white;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			line-height: 20px;
+			padding: 5px;
+			border-radius: 50%;
+		}
+	}
+	> :nth-child(2) {
+		margin: auto;
+		text-align: center;
+		margin: 10px;
+		color: var.$blackBlue;
+		letter-spacing: 3px;
+	}
+	> :nth-child(3) {
+		font-size: 12px;
+		color: var.$whiteBlue;
+	}
+	> :nth-child(4) {
+		width: 550px;
+		margin: auto;
+		color: var.$gris;
+	}
+	> :nth-child(5) {
+		width: 50px;
+		margin : {
+			top: 20px;
+			bottom: 20px;
+			right: auto;
+			left: auto;
+		}
+		display: flex;
+		justify-content: space-between;
+		:nth-child(1),
+		:nth-child(2) {
+			color: var.$whiteBlue;
+			cursor: pointer;
+		}
+	}
+	> :nth-child(6) {
+		padding: 10px;
+		color: var.$whiteBlue;
+		background-color: transparent;
+		border: 1px solid var.$whiteBlue;
+		border-radius: 5px;
+		cursor: pointer;
+		&:hover {
+			background-color: var.$whiteBlue;
+			color: white;
+		}
+	}
+}

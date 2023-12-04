@@ -1,0 +1,108 @@
+/** @format */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: hsl(210, 36%, 96%);
+  margin: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.parent {
+  width: max-content;
+}
+.parent > :nth-child(1) {
+  width: max-content;
+  margin: auto;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: hsl(209, 61%, 16%);
+}
+.parent > :nth-child(1)::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 20%;
+  background-color: hsl(205, 78%, 60%);
+  margin: auto;
+}
+
+.reviewcard {
+  background-color: white;
+  box-shadow: 0px 0px 20px 1px hsla(205, 100%, 94%, 0.068);
+  border: 0px solid;
+  border-radius: 10px;
+  height: max-content;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.reviewcard > :nth-child(1) {
+  background-image: url(https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 2px -2px 0px 2px hsl(205, 78%, 60%);
+}
+.reviewcard > :nth-child(1) > i {
+  display: block;
+  background-color: hsl(205, 78%, 60%);
+  text-align: start;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.reviewcard > :nth-child(2) {
+  margin: auto;
+  text-align: center;
+  margin: 10px;
+  color: hsl(209, 61%, 16%);
+  letter-spacing: 3px;
+}
+.reviewcard > :nth-child(3) {
+  font-size: 12px;
+  color: hsl(205, 78%, 60%);
+}
+.reviewcard > :nth-child(4) {
+  width: 550px;
+  margin: auto;
+  color: hsl(210, 22%, 49%);
+}
+.reviewcard > :nth-child(5) {
+  width: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.reviewcard > :nth-child(5) :nth-child(1),
+.reviewcard > :nth-child(5) :nth-child(2) {
+  color: hsl(205, 78%, 60%);
+  cursor: pointer;
+}
+.reviewcard > :nth-child(6) {
+  padding: 10px;
+  color: hsl(205, 78%, 60%);
+  background-color: transparent;
+  border: 1px solid hsl(205, 78%, 60%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.reviewcard > :nth-child(6):hover {
+  background-color: hsl(205, 78%, 60%);
+  color: white;
+}/*# sourceMappingURL=main.css.map */
